@@ -11,11 +11,12 @@ function moveDodgerLeft() {
 
 
   
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowLeft") {
-      moveDodgerLeft();
-    }
-  });
+  function addingEventListener() {
+    const button= document.getElementById("button")
+    button.addEventListener("click", function(){
+        alert("I was clicked!")
+    } )
+} 
 
 
 
